@@ -1,24 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H20-lo-jUZ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Neo Sans Std-Bold.ttf">
+            <string>NeoSansStd-Bold</string>
+        </array>
+        <array key="Neo Sans Std-Regular.ttf">
+            <string>NeoSansStd-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DCSStripeConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nui-AD-J4o">
+                                <rect key="frame" x="20" y="245.33333333333337" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FyL-yJ-06r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Pay with Card"/>
+                                <connections>
+                                    <segue destination="XxE-fA-M2D" kind="show" id="Gys-U4-R0F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASz-Uq-iMU">
+                                <rect key="frame" x="20" y="325.33333333333331" width="350" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ESv-IA-0WC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add Account"/>
+                                <connections>
+                                    <segue destination="TxN-t1-lI1" kind="show" id="sax-Hs-N9A"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nui-AD-J4o" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="3/5" id="4Hq-Kc-JhI"/>
+                            <constraint firstItem="ASz-Uq-iMU" firstAttribute="top" secondItem="Nui-AD-J4o" secondAttribute="bottom" constant="30" id="5kV-C6-mZr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nui-AD-J4o" secondAttribute="trailing" constant="20" id="Mbv-ll-WBT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ASz-Uq-iMU" secondAttribute="trailing" constant="20" id="O0N-Xc-4Wb"/>
+                            <constraint firstItem="Nui-AD-J4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tci-oF-aje"/>
+                            <constraint firstItem="ASz-Uq-iMU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZL3-YG-J60"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="N0z-m6-pfw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="976.92307692307691" y="-2.1327014218009479"/>
+        </scene>
+        <!--Add Account View Controller-->
+        <scene sceneID="MfO-po-qqJ">
+            <objects>
+                <viewController storyboardIdentifier="AddAccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TxN-t1-lI1" customClass="AddAccountViewController" customModule="DCSStripeConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GM6-4h-Wcz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EAD-Vp-Q7M">
+                                <rect key="frame" x="0.0" y="91" width="390" height="664"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iu-JU-uZZ">
+                                <rect key="frame" x="0.0" y="755" width="390" height="55"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.0078431372550000003" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="11f-KR-6Ng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansStd-Bold" family="Neo Sans Std" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3zm-c0-Php"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8iu-JU-uZZ" firstAttribute="leading" secondItem="GM6-4h-Wcz" secondAttribute="leading" id="CVb-LE-gkL"/>
+                            <constraint firstItem="3zm-c0-Php" firstAttribute="trailing" secondItem="8iu-JU-uZZ" secondAttribute="trailing" id="EvN-Vc-azj"/>
+                            <constraint firstItem="EAD-Vp-Q7M" firstAttribute="top" secondItem="3zm-c0-Php" secondAttribute="top" id="O7a-AZ-zCw"/>
+                            <constraint firstItem="8iu-JU-uZZ" firstAttribute="top" secondItem="EAD-Vp-Q7M" secondAttribute="bottom" id="OyD-uq-9kE"/>
+                            <constraint firstItem="3zm-c0-Php" firstAttribute="bottom" secondItem="8iu-JU-uZZ" secondAttribute="bottom" id="ciF-LJ-6cK"/>
+                            <constraint firstItem="EAD-Vp-Q7M" firstAttribute="leading" secondItem="3zm-c0-Php" secondAttribute="leading" id="inV-8h-V5W"/>
+                            <constraint firstItem="3zm-c0-Php" firstAttribute="trailing" secondItem="EAD-Vp-Q7M" secondAttribute="trailing" id="p80-l3-Xiq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cvW-2q-SPw"/>
+                    <connections>
+                        <outlet property="tableview" destination="EAD-Vp-Q7M" id="Vvu-CZ-1Ef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fsx-uc-p7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="689"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OVp-RG-5dH">
+            <objects>
+                <viewController id="XxE-fA-M2D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKv-Jc-tIW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter card number" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="t7K-7M-0ak" customClass="BKCardNumberField">
+                                <rect key="frame" x="20" y="141" width="350" height="50"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XfT-rJ-qho"/>
+                                </constraints>
+                                <color key="textColor" systemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="NeoSansStd-Regular" family="Neo Sans Std" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRightCustom">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="-1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                        <real key="value" value="-1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oee-Ld-edZ">
+                                <rect key="frame" x="20" y="206" width="350" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM/YY" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-EW-h9Y" customClass="BKCardExpiryField">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="50"/>
+                                        <color key="tintColor" systemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="NeoSansStd-Regular" family="Neo Sans Std" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                <real key="value" value="7.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-1000"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                <real key="value" value="-1000"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter CVC number" clearsOnBeginEditing="YES" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="6xk-9W-1NU">
+                                        <rect key="frame" x="182.66666666666663" y="0.0" width="167.33333333333337" height="50"/>
+                                        <color key="tintColor" systemColor="darkTextColor"/>
+                                        <color key="textColor" systemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="NeoSansStd-Regular" family="Neo Sans Std" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="ASCIICapableNumberPad" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                                <real key="value" value="7.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="-1000"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                                <real key="value" value="-1000"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="52e-lp-edM"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter card holder name" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="aJt-me-Re7">
+                                <rect key="frame" x="20" y="271" width="350" height="50"/>
+                                <color key="tintColor" systemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ty8-28-0bS"/>
+                                </constraints>
+                                <color key="textColor" systemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="NeoSansStd-Regular" family="Neo Sans Std" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeftCustom">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                        <real key="value" value="-1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelXPadding">
+                                        <real key="value" value="-1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwA-pR-EQl">
+                                <rect key="frame" x="0.0" y="755" width="390" height="55"/>
+                                <color key="backgroundColor" red="0.69803921570000005" green="0.0078431372550000003" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="TVM-9h-1j3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NeoSansStd-Bold" family="Neo Sans Std" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="PAY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sBd-L7-s8Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sBd-L7-s8Q" firstAttribute="bottom" secondItem="KwA-pR-EQl" secondAttribute="bottom" id="07z-3p-Mtv"/>
+                            <constraint firstItem="KwA-pR-EQl" firstAttribute="leading" secondItem="hKv-Jc-tIW" secondAttribute="leading" id="KDm-Ne-CJl"/>
+                            <constraint firstItem="sBd-L7-s8Q" firstAttribute="trailing" secondItem="KwA-pR-EQl" secondAttribute="trailing" id="Lfo-6T-0LY"/>
+                            <constraint firstItem="sBd-L7-s8Q" firstAttribute="trailing" secondItem="t7K-7M-0ak" secondAttribute="trailing" constant="20" id="QkZ-vH-qPM"/>
+                            <constraint firstItem="aJt-me-Re7" firstAttribute="leading" secondItem="sBd-L7-s8Q" secondAttribute="leading" constant="20" id="XFH-r8-td2"/>
+                            <constraint firstItem="t7K-7M-0ak" firstAttribute="top" secondItem="sBd-L7-s8Q" secondAttribute="top" constant="50" id="dp7-TW-8VQ"/>
+                            <constraint firstItem="sBd-L7-s8Q" firstAttribute="trailing" secondItem="aJt-me-Re7" secondAttribute="trailing" constant="20" id="duI-v9-iSE"/>
+                            <constraint firstItem="t7K-7M-0ak" firstAttribute="leading" secondItem="sBd-L7-s8Q" secondAttribute="leading" constant="20" id="gLl-1U-qAJ"/>
+                            <constraint firstItem="oee-Ld-edZ" firstAttribute="leading" secondItem="sBd-L7-s8Q" secondAttribute="leading" constant="20" id="roW-IM-vWX"/>
+                            <constraint firstItem="aJt-me-Re7" firstAttribute="top" secondItem="oee-Ld-edZ" secondAttribute="bottom" constant="15" id="wUa-sL-KpI"/>
+                            <constraint firstItem="oee-Ld-edZ" firstAttribute="top" secondItem="t7K-7M-0ak" secondAttribute="bottom" constant="15" id="yuN-PA-wXN"/>
+                            <constraint firstItem="sBd-L7-s8Q" firstAttribute="trailing" secondItem="oee-Ld-edZ" secondAttribute="trailing" constant="20" id="z3X-XG-gAx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kTf-Ir-eRP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTd-QS-DNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8vK-Ig-dGH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H20-lo-jUZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewE-ea-qxL">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CFN-U6-6QV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cu-ld-uyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

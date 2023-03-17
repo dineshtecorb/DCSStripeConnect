@@ -13,6 +13,18 @@
 		61C0239929C42F9100421A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239729C42F9100421A48 /* Main.storyboard */; };
 		61C0239B29C42F9300421A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239A29C42F9300421A48 /* Assets.xcassets */; };
 		61C0239E29C42F9300421A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239C29C42F9300421A48 /* LaunchScreen.storyboard */; };
+		61C023B929C4517700421A48 /* BKCardNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023A929C4517700421A48 /* BKCardNumberField.m */; };
+		61C023BA29C4517700421A48 /* BKCardNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023AA29C4517700421A48 /* BKCardNumberFormatter.m */; };
+		61C023BB29C4517700421A48 /* BKForwardingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023AB29C4517700421A48 /* BKForwardingTextField.m */; };
+		61C023BC29C4517700421A48 /* BKCardNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023AC29C4517700421A48 /* BKCardNumberLabel.m */; };
+		61C023BD29C4517700421A48 /* BKMoneyKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61C023AF29C4517700421A48 /* BKMoneyKit.bundle */; };
+		61C023BE29C4517700421A48 /* BKCardExpiryField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023B129C4517700421A48 /* BKCardExpiryField.m */; };
+		61C023BF29C4517700421A48 /* BKCardPatternInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023B229C4517700421A48 /* BKCardPatternInfo.m */; };
+		61C023C029C4517700421A48 /* BKMoneyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023B529C4517700421A48 /* BKMoneyUtils.m */; };
+		61C023C129C4517700421A48 /* BKCurrencyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61C023B629C4517700421A48 /* BKCurrencyTextField.m */; };
+		61C023C529C473D200421A48 /* AccountFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C023C329C473D200421A48 /* AccountFieldTableViewCell.swift */; };
+		61C023C629C473D200421A48 /* AccountFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C023C429C473D200421A48 /* AccountFieldTableViewCell.xib */; };
+		61C023C829C474AD00421A48 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C023C729C474AD00421A48 /* AddAccountViewController.swift */; };
 		6230F6E257129CB1CAA51486 /* Pods_DCSStripeConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA831A63587951E76F48F3EC /* Pods_DCSStripeConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +37,27 @@
 		61C0239A29C42F9300421A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61C0239D29C42F9300421A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61C0239F29C42F9300421A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C023A729C4517700421A48 /* BKCardPatternInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardPatternInfo.h; sourceTree = "<group>"; };
+		61C023A829C4517700421A48 /* BKCardExpiryField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardExpiryField.h; sourceTree = "<group>"; };
+		61C023A929C4517700421A48 /* BKCardNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberField.m; sourceTree = "<group>"; };
+		61C023AA29C4517700421A48 /* BKCardNumberFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberFormatter.m; sourceTree = "<group>"; };
+		61C023AB29C4517700421A48 /* BKForwardingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKForwardingTextField.m; sourceTree = "<group>"; };
+		61C023AC29C4517700421A48 /* BKCardNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardNumberLabel.m; sourceTree = "<group>"; };
+		61C023AD29C4517700421A48 /* BKCurrencyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCurrencyTextField.h; sourceTree = "<group>"; };
+		61C023AE29C4517700421A48 /* BKMoneyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMoneyUtils.h; sourceTree = "<group>"; };
+		61C023AF29C4517700421A48 /* BKMoneyKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BKMoneyKit.bundle; sourceTree = "<group>"; };
+		61C023B029C4517700421A48 /* BKCardNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberField.h; sourceTree = "<group>"; };
+		61C023B129C4517700421A48 /* BKCardExpiryField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardExpiryField.m; sourceTree = "<group>"; };
+		61C023B229C4517700421A48 /* BKCardPatternInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCardPatternInfo.m; sourceTree = "<group>"; };
+		61C023B329C4517700421A48 /* BKForwardingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKForwardingTextField.h; sourceTree = "<group>"; };
+		61C023B429C4517700421A48 /* BKCardNumberFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberFormatter.h; sourceTree = "<group>"; };
+		61C023B529C4517700421A48 /* BKMoneyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMoneyUtils.m; sourceTree = "<group>"; };
+		61C023B629C4517700421A48 /* BKCurrencyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCurrencyTextField.m; sourceTree = "<group>"; };
+		61C023B729C4517700421A48 /* BKCardNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCardNumberLabel.h; sourceTree = "<group>"; };
+		61C023B829C4517700421A48 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		61C023C329C473D200421A48 /* AccountFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFieldTableViewCell.swift; sourceTree = "<group>"; };
+		61C023C429C473D200421A48 /* AccountFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountFieldTableViewCell.xib; sourceTree = "<group>"; };
+		61C023C729C474AD00421A48 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
 		DACB73E1BE7C5C209C865972 /* Pods-DCSStripeConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCSStripeConnect.release.xcconfig"; path = "Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect.release.xcconfig"; sourceTree = "<group>"; };
 		E7A333F591F7BDCA0C9298E1 /* Pods-DCSStripeConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCSStripeConnect.debug.xcconfig"; path = "Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		FA831A63587951E76F48F3EC /* Pods_DCSStripeConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCSStripeConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +81,6 @@
 				E7A333F591F7BDCA0C9298E1 /* Pods-DCSStripeConnect.debug.xcconfig */,
 				DACB73E1BE7C5C209C865972 /* Pods-DCSStripeConnect.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +105,9 @@
 		61C0239029C42F9100421A48 /* DCSStripeConnect */ = {
 			isa = PBXGroup;
 			children = (
+				61C023C229C473A700421A48 /* Cell */,
+				61C023A629C4517700421A48 /* BKMoneyKit */,
+				61C023B829C4517700421A48 /* BridgingHeader.h */,
 				61C0239129C42F9100421A48 /* AppDelegate.swift */,
 				61C0239329C42F9100421A48 /* SceneDelegate.swift */,
 				61C0239529C42F9100421A48 /* ViewController.swift */,
@@ -80,8 +115,42 @@
 				61C0239A29C42F9300421A48 /* Assets.xcassets */,
 				61C0239C29C42F9300421A48 /* LaunchScreen.storyboard */,
 				61C0239F29C42F9300421A48 /* Info.plist */,
+				61C023C729C474AD00421A48 /* AddAccountViewController.swift */,
 			);
 			path = DCSStripeConnect;
+			sourceTree = "<group>";
+		};
+		61C023A629C4517700421A48 /* BKMoneyKit */ = {
+			isa = PBXGroup;
+			children = (
+				61C023A729C4517700421A48 /* BKCardPatternInfo.h */,
+				61C023A829C4517700421A48 /* BKCardExpiryField.h */,
+				61C023A929C4517700421A48 /* BKCardNumberField.m */,
+				61C023AA29C4517700421A48 /* BKCardNumberFormatter.m */,
+				61C023AB29C4517700421A48 /* BKForwardingTextField.m */,
+				61C023AC29C4517700421A48 /* BKCardNumberLabel.m */,
+				61C023AD29C4517700421A48 /* BKCurrencyTextField.h */,
+				61C023AE29C4517700421A48 /* BKMoneyUtils.h */,
+				61C023AF29C4517700421A48 /* BKMoneyKit.bundle */,
+				61C023B029C4517700421A48 /* BKCardNumberField.h */,
+				61C023B129C4517700421A48 /* BKCardExpiryField.m */,
+				61C023B229C4517700421A48 /* BKCardPatternInfo.m */,
+				61C023B329C4517700421A48 /* BKForwardingTextField.h */,
+				61C023B429C4517700421A48 /* BKCardNumberFormatter.h */,
+				61C023B529C4517700421A48 /* BKMoneyUtils.m */,
+				61C023B629C4517700421A48 /* BKCurrencyTextField.m */,
+				61C023B729C4517700421A48 /* BKCardNumberLabel.h */,
+			);
+			path = BKMoneyKit;
+			sourceTree = "<group>";
+		};
+		61C023C229C473A700421A48 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				61C023C329C473D200421A48 /* AccountFieldTableViewCell.swift */,
+				61C023C429C473D200421A48 /* AccountFieldTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		ECFCF4C4DF9A52888F9D9962 /* Frameworks */ = {
@@ -154,7 +223,9 @@
 			files = (
 				61C0239E29C42F9300421A48 /* LaunchScreen.storyboard in Resources */,
 				61C0239B29C42F9300421A48 /* Assets.xcassets in Resources */,
+				61C023BD29C4517700421A48 /* BKMoneyKit.bundle in Resources */,
 				61C0239929C42F9100421A48 /* Main.storyboard in Resources */,
+				61C023C629C473D200421A48 /* AccountFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +278,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C023BA29C4517700421A48 /* BKCardNumberFormatter.m in Sources */,
+				61C023BB29C4517700421A48 /* BKForwardingTextField.m in Sources */,
+				61C023BE29C4517700421A48 /* BKCardExpiryField.m in Sources */,
+				61C023BC29C4517700421A48 /* BKCardNumberLabel.m in Sources */,
+				61C023C129C4517700421A48 /* BKCurrencyTextField.m in Sources */,
 				61C0239629C42F9100421A48 /* ViewController.swift in Sources */,
+				61C023BF29C4517700421A48 /* BKCardPatternInfo.m in Sources */,
 				61C0239229C42F9100421A48 /* AppDelegate.swift in Sources */,
+				61C023C029C4517700421A48 /* BKMoneyUtils.m in Sources */,
+				61C023B929C4517700421A48 /* BKCardNumberField.m in Sources */,
+				61C023C529C473D200421A48 /* AccountFieldTableViewCell.swift in Sources */,
+				61C023C829C474AD00421A48 /* AddAccountViewController.swift in Sources */,
 				61C0239429C42F9100421A48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
