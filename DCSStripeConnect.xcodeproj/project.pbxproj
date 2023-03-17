@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		61C0239929C42F9100421A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239729C42F9100421A48 /* Main.storyboard */; };
 		61C0239B29C42F9300421A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239A29C42F9300421A48 /* Assets.xcassets */; };
 		61C0239E29C42F9300421A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C0239C29C42F9300421A48 /* LaunchScreen.storyboard */; };
+		6230F6E257129CB1CAA51486 /* Pods_DCSStripeConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA831A63587951E76F48F3EC /* Pods_DCSStripeConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		61C0239A29C42F9300421A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61C0239D29C42F9300421A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61C0239F29C42F9300421A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACB73E1BE7C5C209C865972 /* Pods-DCSStripeConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCSStripeConnect.release.xcconfig"; path = "Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect.release.xcconfig"; sourceTree = "<group>"; };
+		E7A333F591F7BDCA0C9298E1 /* Pods-DCSStripeConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCSStripeConnect.debug.xcconfig"; path = "Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		FA831A63587951E76F48F3EC /* Pods_DCSStripeConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCSStripeConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6230F6E257129CB1CAA51486 /* Pods_DCSStripeConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006340356EABA69D3295F0A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7A333F591F7BDCA0C9298E1 /* Pods-DCSStripeConnect.debug.xcconfig */,
+				DACB73E1BE7C5C209C865972 /* Pods-DCSStripeConnect.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		61C0238529C42F9100421A48 = {
 			isa = PBXGroup;
 			children = (
 				61C0239029C42F9100421A48 /* DCSStripeConnect */,
 				61C0238F29C42F9100421A48 /* Products */,
+				006340356EABA69D3295F0A1 /* Pods */,
+				ECFCF4C4DF9A52888F9D9962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = DCSStripeConnect;
 			sourceTree = "<group>";
 		};
+		ECFCF4C4DF9A52888F9D9962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA831A63587951E76F48F3EC /* Pods_DCSStripeConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61C023A229C42F9300421A48 /* Build configuration list for PBXNativeTarget "DCSStripeConnect" */;
 			buildPhases = (
+				D14D84A45C453B6AD55C240F /* [CP] Check Pods Manifest.lock */,
 				61C0238A29C42F9100421A48 /* Sources */,
 				61C0238B29C42F9100421A48 /* Frameworks */,
 				61C0238C29C42F9100421A48 /* Resources */,
+				E807B7B3F96414C39DE5D841 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 61C0238929C42F9100421A48 /* Build configuration list for PBXProject "DCSStripeConnect" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D14D84A45C453B6AD55C240F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCSStripeConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E807B7B3F96414C39DE5D841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCSStripeConnect/Pods-DCSStripeConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61C0238A29C42F9100421A48 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		61C023A329C42F9300421A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A333F591F7BDCA0C9298E1 /* Pods-DCSStripeConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +363,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +379,7 @@
 		};
 		61C023A429C42F9300421A48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACB73E1BE7C5C209C865972 /* Pods-DCSStripeConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +391,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

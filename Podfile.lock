@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (5.6.4)
+  - IQKeyboardManagerSwift (6.5.11)
+  - Stripe (23.4.1):
+    - StripeApplePay (= 23.4.1)
+    - StripeCore (= 23.4.1)
+    - StripePayments (= 23.4.1)
+    - StripePaymentsUI (= 23.4.1)
+    - StripeUICore (= 23.4.1)
+  - StripeApplePay (23.4.1):
+    - StripeCore (= 23.4.1)
+  - StripeCore (23.4.1)
+  - StripePayments (23.4.1):
+    - StripeCore (= 23.4.1)
+    - StripePayments/Stripe3DS2 (= 23.4.1)
+  - StripePayments/Stripe3DS2 (23.4.1):
+    - StripeCore (= 23.4.1)
+  - StripePaymentsUI (23.4.1):
+    - StripeCore (= 23.4.1)
+    - StripePayments (= 23.4.1)
+    - StripeUICore (= 23.4.1)
+  - StripeUICore (23.4.1):
+    - StripeCore (= 23.4.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - Stripe
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - Stripe
+    - StripeApplePay
+    - StripeCore
+    - StripePayments
+    - StripePaymentsUI
+    - StripeUICore
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  Stripe: 8fe59e1f631bf9d9fb7a6d5d3b444b2aa0b35d50
+  StripeApplePay: ac7515af779eb8a3914fb40d997a7435b0cf6eb9
+  StripeCore: 8a337501c3ea80a7c1720fd7abe2c326efe52fca
+  StripePayments: e426da0196398ca858dfeb103a17cbc7846a3710
+  StripePaymentsUI: 41357a6a0378f065e571cc42f59a7b9bcff80ee8
+  StripeUICore: 8d1b688a3d8c2d340da2a5a5875681805e82d039
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 1bc666452f8600d4772feffe5bef3542dbc1515b
+
+COCOAPODS: 1.11.3

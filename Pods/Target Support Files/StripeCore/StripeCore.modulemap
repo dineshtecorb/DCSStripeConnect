@@ -1,0 +1,6 @@
+framework module StripeCore {
+  umbrella header "StripeCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

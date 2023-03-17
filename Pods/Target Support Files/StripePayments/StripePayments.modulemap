@@ -1,0 +1,6 @@
+framework module StripePayments {
+  umbrella header "StripePayments-umbrella.h"
+
+  export *
+  module * { export * }
+}

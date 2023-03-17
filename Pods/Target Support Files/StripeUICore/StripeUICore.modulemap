@@ -1,0 +1,6 @@
+framework module StripeUICore {
+  umbrella header "StripeUICore-umbrella.h"
+
+  export *
+  module * { export * }
+}
