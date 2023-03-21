@@ -21,12 +21,14 @@ PODS:
     - StripeUICore (= 23.4.1)
   - StripeUICore (23.4.1):
     - StripeCore (= 23.4.1)
+  - SVProgressHUD (2.2.5)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - IQKeyboardManagerSwift
   - Stripe
+  - SVProgressHUD
   - SwiftyJSON
 
 SPEC REPOS:
@@ -39,6 +41,7 @@ SPEC REPOS:
     - StripePayments
     - StripePaymentsUI
     - StripeUICore
+    - SVProgressHUD
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -50,8 +53,9 @@ SPEC CHECKSUMS:
   StripePayments: e426da0196398ca858dfeb103a17cbc7846a3710
   StripePaymentsUI: 41357a6a0378f065e571cc42f59a7b9bcff80ee8
   StripeUICore: 8d1b688a3d8c2d340da2a5a5875681805e82d039
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 1bc666452f8600d4772feffe5bef3542dbc1515b
+PODFILE CHECKSUM: f0f4b92a031a2f094930f0b3306cedf75c0b4bbd
 
 COCOAPODS: 1.11.3

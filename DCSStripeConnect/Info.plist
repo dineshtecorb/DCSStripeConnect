@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>To upload picture of legal document for add banck account</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To upload picture of legal document for add banck account</string>
 </dict>
 </plist>

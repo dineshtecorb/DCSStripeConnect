@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		615ECE4129C861C100DF852B /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3929C861C100DF852B /* NSDateComponents+Timepiece.swift */; };
+		615ECE4229C861C100DF852B /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3A29C861C100DF852B /* NSCalendar+Timepiece.swift */; };
+		615ECE4329C861C100DF852B /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3B29C861C100DF852B /* Int+Timepiece.swift */; };
+		615ECE4429C861C100DF852B /* WWCalendarTimeSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615ECE3C29C861C100DF852B /* WWCalendarTimeSelector.storyboard */; };
+		615ECE4529C861C100DF852B /* WWCalendarTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3D29C861C100DF852B /* WWCalendarTimeSelector.swift */; };
+		615ECE4629C861C100DF852B /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3E29C861C100DF852B /* NSDate+Timepiece.swift */; };
+		615ECE4729C861C100DF852B /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE3F29C861C100DF852B /* String+Timepiece.swift */; };
+		615ECE4829C861C100DF852B /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE4029C861C100DF852B /* Duration.swift */; };
+		615ECE4B29C8670300DF852B /* UploadDocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE4929C8670200DF852B /* UploadDocumentTableViewCell.swift */; };
+		615ECE4C29C8670300DF852B /* UploadDocumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615ECE4A29C8670200DF852B /* UploadDocumentTableViewCell.xib */; };
+		615ECE5429C867D100DF852B /* AccountHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE5229C867D000DF852B /* AccountHeader.swift */; };
+		615ECE5529C867D100DF852B /* AccountHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 615ECE5329C867D100DF852B /* AccountHeader.xib */; };
+		615ECE5729C8682700DF852B /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615ECE5629C8682700DF852B /* PaymentService.swift */; };
 		61C0239229C42F9100421A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0239129C42F9100421A48 /* AppDelegate.swift */; };
 		61C0239429C42F9100421A48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0239329C42F9100421A48 /* SceneDelegate.swift */; };
 		61C0239629C42F9100421A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C0239529C42F9100421A48 /* ViewController.swift */; };
@@ -29,6 +42,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615ECE3929C861C100DF852B /* NSDateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateComponents+Timepiece.swift"; sourceTree = "<group>"; };
+		615ECE3A29C861C100DF852B /* NSCalendar+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Timepiece.swift"; sourceTree = "<group>"; };
+		615ECE3B29C861C100DF852B /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
+		615ECE3C29C861C100DF852B /* WWCalendarTimeSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WWCalendarTimeSelector.storyboard; sourceTree = "<group>"; };
+		615ECE3D29C861C100DF852B /* WWCalendarTimeSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCalendarTimeSelector.swift; sourceTree = "<group>"; };
+		615ECE3E29C861C100DF852B /* NSDate+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Timepiece.swift"; sourceTree = "<group>"; };
+		615ECE3F29C861C100DF852B /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
+		615ECE4029C861C100DF852B /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		615ECE4929C8670200DF852B /* UploadDocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadDocumentTableViewCell.swift; sourceTree = "<group>"; };
+		615ECE4A29C8670200DF852B /* UploadDocumentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadDocumentTableViewCell.xib; sourceTree = "<group>"; };
+		615ECE5229C867D000DF852B /* AccountHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountHeader.swift; sourceTree = "<group>"; };
+		615ECE5329C867D100DF852B /* AccountHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountHeader.xib; sourceTree = "<group>"; };
+		615ECE5629C8682700DF852B /* PaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentService.swift; sourceTree = "<group>"; };
 		61C0238E29C42F9100421A48 /* DCSStripeConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCSStripeConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C0239129C42F9100421A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61C0239329C42F9100421A48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +110,66 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		615ECE3829C861C100DF852B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				615ECE3929C861C100DF852B /* NSDateComponents+Timepiece.swift */,
+				615ECE3A29C861C100DF852B /* NSCalendar+Timepiece.swift */,
+				615ECE3B29C861C100DF852B /* Int+Timepiece.swift */,
+				615ECE3C29C861C100DF852B /* WWCalendarTimeSelector.storyboard */,
+				615ECE3D29C861C100DF852B /* WWCalendarTimeSelector.swift */,
+				615ECE3E29C861C100DF852B /* NSDate+Timepiece.swift */,
+				615ECE3F29C861C100DF852B /* String+Timepiece.swift */,
+				615ECE4029C861C100DF852B /* Duration.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		615ECE4D29C8672D00DF852B /* BankAccountHeader */ = {
+			isa = PBXGroup;
+			children = (
+				615ECE5229C867D000DF852B /* AccountHeader.swift */,
+				615ECE5329C867D100DF852B /* AccountHeader.xib */,
+			);
+			path = BankAccountHeader;
+			sourceTree = "<group>";
+		};
+		615ECE5829C872DF00DF852B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61C0239529C42F9100421A48 /* ViewController.swift */,
+				61C023C729C474AD00421A48 /* AddAccountViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		615ECE5929C872FE00DF852B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61C023A629C4517700421A48 /* BKMoneyKit */,
+				61C023B829C4517700421A48 /* BridgingHeader.h */,
+				615ECE3829C861C100DF852B /* Sources */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		615ECE5A29C8731900DF852B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61C023C229C473A700421A48 /* Cell */,
+				615ECE4D29C8672D00DF852B /* BankAccountHeader */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		615ECE5B29C8733E00DF852B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				615ECE5629C8682700DF852B /* PaymentService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		61C0238529C42F9100421A48 = {
 			isa = PBXGroup;
 			children = (
@@ -105,17 +191,16 @@
 		61C0239029C42F9100421A48 /* DCSStripeConnect */ = {
 			isa = PBXGroup;
 			children = (
-				61C023C229C473A700421A48 /* Cell */,
-				61C023A629C4517700421A48 /* BKMoneyKit */,
-				61C023B829C4517700421A48 /* BridgingHeader.h */,
+				615ECE5A29C8731900DF852B /* Views */,
+				615ECE5929C872FE00DF852B /* Helpers */,
 				61C0239129C42F9100421A48 /* AppDelegate.swift */,
 				61C0239329C42F9100421A48 /* SceneDelegate.swift */,
-				61C0239529C42F9100421A48 /* ViewController.swift */,
+				615ECE5829C872DF00DF852B /* Controllers */,
 				61C0239729C42F9100421A48 /* Main.storyboard */,
 				61C0239A29C42F9300421A48 /* Assets.xcassets */,
 				61C0239C29C42F9300421A48 /* LaunchScreen.storyboard */,
 				61C0239F29C42F9300421A48 /* Info.plist */,
-				61C023C729C474AD00421A48 /* AddAccountViewController.swift */,
+				615ECE5B29C8733E00DF852B /* Services */,
 			);
 			path = DCSStripeConnect;
 			sourceTree = "<group>";
@@ -148,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				61C023C329C473D200421A48 /* AccountFieldTableViewCell.swift */,
+				615ECE4929C8670200DF852B /* UploadDocumentTableViewCell.swift */,
+				615ECE4A29C8670200DF852B /* UploadDocumentTableViewCell.xib */,
 				61C023C429C473D200421A48 /* AccountFieldTableViewCell.xib */,
 			);
 			path = Cell;
@@ -224,7 +311,10 @@
 				61C0239E29C42F9300421A48 /* LaunchScreen.storyboard in Resources */,
 				61C0239B29C42F9300421A48 /* Assets.xcassets in Resources */,
 				61C023BD29C4517700421A48 /* BKMoneyKit.bundle in Resources */,
+				615ECE4C29C8670300DF852B /* UploadDocumentTableViewCell.xib in Resources */,
 				61C0239929C42F9100421A48 /* Main.storyboard in Resources */,
+				615ECE4429C861C100DF852B /* WWCalendarTimeSelector.storyboard in Resources */,
+				615ECE5529C867D100DF852B /* AccountHeader.xib in Resources */,
 				61C023C629C473D200421A48 /* AccountFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				615ECE4129C861C100DF852B /* NSDateComponents+Timepiece.swift in Sources */,
+				615ECE4529C861C100DF852B /* WWCalendarTimeSelector.swift in Sources */,
+				615ECE4629C861C100DF852B /* NSDate+Timepiece.swift in Sources */,
 				61C023BA29C4517700421A48 /* BKCardNumberFormatter.m in Sources */,
 				61C023BB29C4517700421A48 /* BKForwardingTextField.m in Sources */,
 				61C023BE29C4517700421A48 /* BKCardExpiryField.m in Sources */,
@@ -286,11 +379,18 @@
 				61C0239629C42F9100421A48 /* ViewController.swift in Sources */,
 				61C023BF29C4517700421A48 /* BKCardPatternInfo.m in Sources */,
 				61C0239229C42F9100421A48 /* AppDelegate.swift in Sources */,
+				615ECE4329C861C100DF852B /* Int+Timepiece.swift in Sources */,
+				615ECE5429C867D100DF852B /* AccountHeader.swift in Sources */,
+				615ECE5729C8682700DF852B /* PaymentService.swift in Sources */,
 				61C023C029C4517700421A48 /* BKMoneyUtils.m in Sources */,
+				615ECE4729C861C100DF852B /* String+Timepiece.swift in Sources */,
 				61C023B929C4517700421A48 /* BKCardNumberField.m in Sources */,
+				615ECE4B29C8670300DF852B /* UploadDocumentTableViewCell.swift in Sources */,
+				615ECE4829C861C100DF852B /* Duration.swift in Sources */,
 				61C023C529C473D200421A48 /* AccountFieldTableViewCell.swift in Sources */,
 				61C023C829C474AD00421A48 /* AddAccountViewController.swift in Sources */,
 				61C0239429C42F9100421A48 /* SceneDelegate.swift in Sources */,
+				615ECE4229C861C100DF852B /* NSCalendar+Timepiece.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tecorb.DCSStripeConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dineshsaini_tecorb/Desktop/Dinesh/Dinesh/OwnThirdParties/DCSStripeConnect/DCSStripeConnect/DCSStripeConnect/Helpers/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -481,6 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tecorb.DCSStripeConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dineshsaini_tecorb/Desktop/Dinesh/Dinesh/OwnThirdParties/DCSStripeConnect/DCSStripeConnect/DCSStripeConnect/Helpers/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

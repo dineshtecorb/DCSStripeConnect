@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UploadDocumentTableViewCell" rowHeight="68" id="KGk-i7-Jjw" customClass="UploadDocumentTableViewCell" customModule="CartingKidzsDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mES-VP-Xbh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Document" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4a-4f-eqP">
+                                <rect key="frame" x="20" y="5" width="140.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit picture of legal doucument , Driver license or goverment ID." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNI-9z-S49">
+                                <rect key="frame" x="20" y="27" width="208" height="30"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Myo-eW-6VV">
+                                <rect key="frame" x="251" y="5" width="64" height="57.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R4a-4f-eqP" firstAttribute="leading" secondItem="mES-VP-Xbh" secondAttribute="leading" constant="20" id="80P-ss-oLh"/>
+                            <constraint firstItem="jNI-9z-S49" firstAttribute="leading" secondItem="mES-VP-Xbh" secondAttribute="leading" constant="20" id="9Rm-K9-ibx"/>
+                            <constraint firstItem="jNI-9z-S49" firstAttribute="width" secondItem="mES-VP-Xbh" secondAttribute="width" multiplier="13/20" id="LfK-PK-gcz"/>
+                            <constraint firstItem="Myo-eW-6VV" firstAttribute="top" secondItem="mES-VP-Xbh" secondAttribute="top" constant="5" id="QMg-Gw-RUa"/>
+                            <constraint firstAttribute="bottom" secondItem="Myo-eW-6VV" secondAttribute="bottom" constant="5" id="Vh4-fc-tlN"/>
+                            <constraint firstItem="jNI-9z-S49" firstAttribute="top" secondItem="R4a-4f-eqP" secondAttribute="bottom" id="eK2-jv-iaa"/>
+                            <constraint firstItem="Myo-eW-6VV" firstAttribute="width" secondItem="mES-VP-Xbh" secondAttribute="width" multiplier="1/5" id="iFg-o4-zO0"/>
+                            <constraint firstItem="R4a-4f-eqP" firstAttribute="bottom" secondItem="mES-VP-Xbh" secondAttribute="centerY" multiplier="4/5" id="kxE-94-wwK"/>
+                            <constraint firstAttribute="trailing" secondItem="Myo-eW-6VV" secondAttribute="trailing" constant="5" id="nfY-l7-bm8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mES-VP-Xbh" secondAttribute="bottom" id="6lU-Pa-Rbx"/>
+                    <constraint firstItem="mES-VP-Xbh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QdK-0x-smq"/>
+                    <constraint firstItem="mES-VP-Xbh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TxB-iu-DWO"/>
+                    <constraint firstAttribute="trailing" secondItem="mES-VP-Xbh" secondAttribute="trailing" id="xwC-3m-FWg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="documentImage" destination="Myo-eW-6VV" id="hbv-Qz-p69"/>
+                <outlet property="infoLabel" destination="jNI-9z-S49" id="AFd-8C-Xlg"/>
+                <outlet property="uploadDocLabel" destination="R4a-4f-eqP" id="XW5-5j-lcB"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="66"/>
+        </tableViewCell>
+    </objects>
+</document>

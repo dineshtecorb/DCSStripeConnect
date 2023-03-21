@@ -10,5 +10,6 @@ target 'DCSStripeConnect' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'Stripe'
+  pod 'SVProgressHUD'
 
 end

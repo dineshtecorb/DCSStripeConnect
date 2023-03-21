@@ -91,6 +91,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickAddAccount:" destination="TxN-t1-lI1" eventType="touchUpInside" id="eX0-Oa-V3B"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3zm-c0-Php"/>
@@ -107,7 +110,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cvW-2q-SPw"/>
                     <connections>
-                        <outlet property="tableview" destination="EAD-Vp-Q7M" id="Vvu-CZ-1Ef"/>
+                        <outlet property="accountTableView" destination="EAD-Vp-Q7M" id="VnE-oc-ATj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fsx-uc-p7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -117,7 +120,7 @@
         <!--View Controller-->
         <scene sceneID="OVp-RG-5dH">
             <objects>
-                <viewController id="XxE-fA-M2D" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XxE-fA-M2D" customClass="ViewController" customModule="DCSStripeConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKv-Jc-tIW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,6 +253,9 @@
                                 <state key="normal" title="PAY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onClickAddCardButton:" destination="XxE-fA-M2D" eventType="touchUpInside" id="A0j-NM-ACd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sBd-L7-s8Q"/>
@@ -270,6 +276,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kTf-Ir-eRP"/>
+                    <connections>
+                        <outlet property="accountHolderNameTextField" destination="aJt-me-Re7" id="Y6t-Bj-E0f"/>
+                        <outlet property="accountNumberTextField" destination="t7K-7M-0ak" id="86F-z8-dsK"/>
+                        <outlet property="cardExpiryTextField" destination="JUw-EW-h9Y" id="phX-hY-tCr"/>
+                        <outlet property="cvvTextField" destination="6xk-9W-1NU" id="8VW-65-s05"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTd-QS-DNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
